@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supply Request Form</title>
+</head>
+<body>
+    <h1>Supply Request Form</h1>
+    <form action="/submit-supply-request" method="POST">
+        <label for="requestor-name">Requestor Name:</label><br>
+        <input type="text" id="requestor-name" name="requestor-name" required><br><br>
+
+        <label for="requestor-email">Requestor Email:</label><br>
+        <input type="email" id="requestor-email" name="requestor-email" required><br><br>
+
+        <label for="item-name">Item Name:</label><br>
+        <input type="text" id="item-name" name="item-name" required><br><br>
+
+        <label for="item-quantity">Quantity:</label><br>
+        <input type="number" id="item-quantity" name="item-quantity" min="1" required><br><br>
+
+        <label for="reason">Reason for Request:</label><br>
+        <textarea id="reason" name="reason" rows="4" required></textarea><br><br>
+
+        <input type="submit" value="Submit Request">
+    </form>
+</body>
+</html>
